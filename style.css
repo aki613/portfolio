@@ -1,88 +1,130 @@
-*{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-	display: none;
-	background-image:
-		url('images/si.jpg');
-	background-attachment: fixed;
-	background-size: cover;
+    font-size: 100%;
+    color: #333;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-body.introduce{
-	background-image:
-		url('images/bg3.png');
-}
-a{
-  color:white;
+a {
+    text-decoration: none;
+    color: #333;
 }
 
-img{
-width: 100%;	
+li {
+    list-style: none;
 }
 
-#wrap{
-  margin:auto;
-  width: 100%;
-}
+/* .wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+} */
 
-header{
-  padding: 40px;
-	background-color :slategray;
-  color:white;
-}
-  header h1{
-    margin-right: auto;
-  }
-  header ul{
-    margin-top: 20px;
+
+/* header */
+
+header {
     display: flex;
-  }
-  header li{
-    width: auto;
-    margin-right: 30px;
-  }
-
-section{
-  padding: 40px;
-  margin-bottom: 40px;
-  background-color: #DDDDDD;
-}
-section#HOME{
-  padding: 0px;
-  height: 500px;
-  margin-bottom: 40px;
-  background-color: #DDDDDD;
-}
-  section h1{
-    margin-bottom: 12px;
-  }
-  section p {
-    margin-bottom: 40px;
-  }
-
-footer{
-  padding: 40px;
-  background-color: #333333;
-  color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 1vw 2vw 0 3vw;
 }
 
-@media all and (min-width: 600px) {
-  header{
+#header-item {
     display: flex;
-  }
-    header ul {
-      margin-top: 0;
-    }
+    margin-top: 2rem;
+    align-items: center;
 }
 
-@media all and (min-width: 1025px) {
-  #wrap {
-    width: 80%;
-    max-width: 1000px;
-  }
- 
+#header-list {
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+    border-left: 1px solid #777;
+}
+
+#header-list:first-child {
+    border: none;
+}
+
+#header-list a:hover {
+    color: #008080
+}
+
+#header-list a {
+    transition: all 1s;
+}
+
+#header-title {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+#header-nav {
+    margin-right: 4rem;
+}
+
+.img {
+    max-width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.inst-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/*上下中央揃え*/
+.container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+}
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background:#2f4f4f;
+	text-align:center;
+	color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
 }

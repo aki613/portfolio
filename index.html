@@ -2,28 +2,71 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>SampleSite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Akmitsu Aoki Portfolio site</title>
 </head>
 
 <body>
+    <!-- body内のローディングを表示させたい場所に以下のHTMLを記載します。 -->
+<div id="splash">
+<div id="splash_text"></div>
+<!--/splash--></div>
+<div id="container">
 
-  <div id="wrap">
+<!--/container--></div>
 
-    <header>
-        <h1><a href="index.html">Akimitsu</a></h1>
-      <nav>
-        <ul>
-          <li><a href="intoroduce.html">introduce</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="mailto:akmitsu0613@gmail.com">contact</a></li>
-        </ul>
-      </nav>
+    <header id="header" class="wrapper">
+        <h1 id="header-title"><a href="index.html">Akimitsu <br> Aoki</a></h1>
+        <nav id="header-nav">
+            <ul id="header-item">
+                <li id="header-list"><a href="index.html">Home</a></li>
+                <li id="header-list"><a href="about.html">About</a></li>
+                <li id="header-list"><a href="works.html">Works</a></li>
+                <li id="header-list"><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="HOME">
-      <img src="images/hm1.png" alt="画像"> 
-      
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="images/main/main.jpg" alt="" class="main-vis">
+                <img src="images/main/main_02.jpg" alt="" class="main-vis">
+                <img src="images/main/main_03.jpg" alt="" class="main-vis">
+                <img src="images/main/main_04.jpg" alt="" class="main-vis">
+                <img src="images/main/main_05.jpg" alt="" class="main-vis">
+                <img src="images/main/main_06.jpg" alt="" class="main-vis">
+                <img src="images/main/main_07.jpg" alt="" class="main-vis">
+                <img src="images/main/main_08.jpg" alt="" class="main-vis">
+                <img src="images/main/main_09.jpg" alt="" class="main-vis">
+                <img src="images/main/main_10.jpg" alt="" class="main-vis">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/sho6_13/"><img src="images/インスタグラムのシンプルなロゴのアイコン 1.png" alt=""
+                class="inst-icon"></a>
+        <p>Akimitsu Aoki</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    
+    <!--自作のJS-->
+    <script src="script.js"></script>
+    </body>
+</body>
+
+</html>
